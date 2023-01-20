@@ -20,6 +20,9 @@ function Layout({ children }) {
                                 <li className="nav-item">
                                     <Link className="nav-link" href="/posts/">POSTS</Link>
                                 </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" href="/people/">PEOPLE</Link>
+                                </li>
                                 {/* <li className="nav-item">
                                     <a className="nav-link" href="https://santrikoding.com/ebook" target="_blank">EBOOK</a>
                                 </li>
