@@ -1,8 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
+// Controller
 use \App\Http\Controllers\PostController;
 use \App\Http\Controllers\PeopleController;
+use \App\Http\Controllers\LamanController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,10 +17,6 @@ use \App\Http\Controllers\PeopleController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-// Post
+Route::resource('/', LamanController::class);
 Route::resource('/posts', PostController::class);
 Route::resource('/people', PeopleController::class);
