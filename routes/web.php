@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\PostController;
 use \App\Http\Controllers\PeopleController;
 use \App\Http\Controllers\LamanController;
+use \App\Http\Controllers\ContentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +18,7 @@ use \App\Http\Controllers\LamanController;
 |
 */
 
-Route::resource('/', LamanController::class);
+Route::resource('/laman', LamanController::class);
+Route::resource('/content', ContentController::class);
 Route::resource('/posts', PostController::class);
 Route::resource('/people', PeopleController::class);

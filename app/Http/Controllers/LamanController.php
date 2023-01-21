@@ -10,7 +10,6 @@ class LamanController extends Controller
     {
 
         $psot = "dada";
-        // dd($psot);die();
 
         return inertia('Laman/Home',[
             'psot' => $psot
