@@ -9,10 +9,26 @@ class LamanController extends Controller
     public function index()
     {
 
-        $psot = "dada";
+        $psot = "Homepage";
 
         return inertia('Laman/Home',[
-            'psot' => $psot
+            'header' => $psot
+        ]);
+    }
+
+    public function news(){
+        $news = "Newspage";
+
+        return inertia('Laman/News', [
+            'header' => $news
+        ]);
+    }
+
+    public function about(){
+        $news = "Aboutpage";
+
+        return inertia('Laman/AboutMe', [
+            'header' => $news
         ]);
     }
 }

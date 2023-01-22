@@ -3,7 +3,7 @@ import React from 'react';
 
 import LayoutLaman from '../../Layouts/LamanDefault';
 
-export default function LamanIndex() {
+export default function LamanIndex(title) {
 
   return (
     <LayoutLaman>
@@ -11,7 +11,7 @@ export default function LamanIndex() {
             <div className="row pt-2">
                 <div className="col-md-9 mt-2">
                     <div className="row text-center bg-primary me-4">
-                        <h4>KONTEN</h4>
+                        <h4>{title.header}</h4>
                     </div>
                     <div className="row text-center bg-primary me-4 mt-1 pb-3 pt-2">
                         {/* Bisa di ForEach untuk isi konten */}

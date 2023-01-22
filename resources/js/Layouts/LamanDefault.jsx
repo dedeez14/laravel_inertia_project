@@ -6,6 +6,10 @@ import { Link } from '@inertiajs/inertia-react';
 
 function LayoutLaman({ children }) {
 
+    // $(document).ready(function() {
+    //     $('#login_form').hide();
+    // });
+
     return (
         <>
             <header>
@@ -24,9 +28,12 @@ function LayoutLaman({ children }) {
                                     <Link className="nav-link" href="/about-us">ABOUT US</Link>
                                 </li>
                             </ul>
-                            <form className="d-flex">
-                                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                                <button className="btn btn-success" type="submit">Search</button>
+                            <Link className='btn btn-sm btn-primary'>Login</Link>
+                            <Link className='btn btn-sm btn-primary'>Register</Link>
+                            <form className="d-flex" id='login_form'>
+                            <input type="text" name='login_email' className='form-control form-control-sm me-2' />
+                            <input type="password" name='login_password' className='form-control form-control-sm me-2' />
+                            <button type='submit' className='btn btn-sm btn-primary'>login</button>
                             </form>
                         </div>
                     </div>

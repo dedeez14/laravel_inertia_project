@@ -9,7 +9,7 @@ import LayoutLaman from '../../Layouts/LamanDefault';
 // //import Link
 // import { Link } from '@inertiajs/inertia-react';
 
-export default function LamanNews(title) {
+export default function LamanAbout(title) {
     // console.log(title)
 
   return (

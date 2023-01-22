@@ -17,8 +17,13 @@ use \App\Http\Controllers\ContentController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Laman
+Route::get('/', [LamanController::class, 'index']);
+Route::get('/news', [LamanController::class, 'news']);
+Route::get('/about-us', [LamanController::class, 'about']);
 
-Route::resource('/laman', LamanController::class);
+
+// Admin Panel
 Route::resource('/content', ContentController::class);
 Route::resource('/posts', PostController::class);
 Route::resource('/people', PeopleController::class);
